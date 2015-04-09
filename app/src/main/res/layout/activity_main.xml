@@ -9,7 +9,6 @@
     tools:context="com.aleksandarzezovski.simplecompass.MainActivity" >
 
     <Button
-        android:id="@+id/btnpointer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Press this button to start the compass"

@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /** Called when the user clicks the start compass button */
-    public void startCompass(View v) {
+    public void startCompass(View view) {
         Intent intent = new Intent(this, SimpleCompassActivity.class);
         startActivity(intent);
     }
