@@ -1,9 +1,11 @@
 package com.aleksandarzezovski.simplecompass;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -13,7 +15,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,5 +36,11 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Called when the user clicks the start compass button */
+    public void startCompass(View v) {
+        Intent intent = new Intent(this, SimpleCompassActivity.class);
+        startActivity(intent);
     }
 }
